@@ -1,0 +1,135 @@
+#sidebar {
+    border-right-style: solid;
+    border-width: 0.03em;
+    height: 52.5em;
+    border-color: #6a6d6f;
+    width: 16em;
+    float: left;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#logo {
+    text-align: center;
+    font-family: Simplifica;
+    font-size: 2em;
+}
+
+.link {
+    font-family: Century-Schoolbook;
+    font-style: italic;
+    font-weight: 700;
+    border-top-style: solid;
+    border-width: 0.03em;
+    border-color: #6a6d6f;
+    padding: 1em;
+    padding-left: 2em;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+#experience {
+    background-color: #df7a7a;
+}
+
+#contact {
+    border-bottom-style: solid;
+}
+
+.link:hover {
+    color: white;
+    background-color: black;
+    transition: all .5s ease;
+}
+
+#content {
+    display: flex;
+}
+
+#main {
+    font-family: Century-Schoolbook;
+}
+
+#title {
+    font-weight: 200;
+}
+
+#menu {
+    border-top-style: solid;
+    border-color: #6a6d6f;
+    width: 22em;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    font-style: italic;
+    color: #6a6d6f;
+    font-size: 1.1em;
+}
+
+#menu:hover {
+    text-decoration: underline;
+}
+
+#title, #titlebody, #menu {
+    margin-left: 3%;
+}
+
+#pic1 {
+    float: left;
+}
+
+.pic {
+    height: 26.11em;
+}
+
+#subcontent {
+    height: 38em;
+    background-color: #df7a7a;
+    width: 85.6em;
+}
+
+#sec1 {
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 37em;
+    float: left;
+}
+
+#sec2 {
+    margin-right: 2em;
+}
+
+.course {
+    float: left;
+    padding-left: 2em;
+    text-align: center;
+}
+
+.course2 {
+    float: left;
+    padding-left: 8em;
+}
+
+#carte {
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+#alacarte:hover {
+    text-decoration: underline;
+}
+
+.coursecontent, .dishend {
+    margin-bottom: 2em;
+}
+
+@font-face {
+    font-family: 'Century-Schoolbook';
+    src: url('Century-Schoolbook-Monospace-BT.woff') format('woff'),
+    url('Century-Schoolbook-Monospace-BT.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Simplifica';
+    src: url('SIMPLIFICA.woff') format('woff'), 
+    url('SIMPLIFICA.ttf') format('truetype');
+}
