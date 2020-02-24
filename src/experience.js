@@ -1,0 +1,53 @@
+function loadExperience() {
+    const main = document.querySelector("#main");
+    main.innerHTML = "";
+    const title = document.createElement("h1");
+    title.id = "title";
+    title.textContent = "Restaurant Jeremy Vuong";
+    main.appendChild(title);   
+    const titlebody = document.createElement("p");
+    titlebody.id = "titlebody";
+    titlebody.textContent = "Established in 2020, Restaurant Jeremy Vuong is the fusion of world class food, romantic ambience and unparalled service - a setting truly reflective of its zero years of achievments.";
+    main.appendChild(titlebody);
+    const menu = document.createElement("p");
+    menu.id = "menu";
+    menu.textContent = "View Restaurant Jeremy Vuongs menus";
+    main.appendChild(menu);
+    const subcontent = document.createElement("div");
+    subcontent.id = "subcontent";
+    main.appendChild(subcontent);
+    const pic1 = document.createElement("img");
+    pic1.id = "pic1";
+    pic1.classList.add("pic");
+    pic1.src = "pic1.jpg";
+    subcontent.appendChild(pic1);
+    const pic2 = document.createElement("img");
+    pic2.id = "pic2";
+    pic2.classList.add("pic");
+    pic2.src = "pic2.jpg";
+    subcontent.appendChild(pic2);
+    const sec1 = document.createElement("div");
+    sec1.id = "sec1";
+    subcontent.appendChild(sec1);
+    const inspiration = document.createElement("h1");
+    inspiration.classList.add("header");
+    inspiration.textContent = "Inspiration Table";
+    sec1.appendChild(inspiration);
+    const body1 = document.createElement("p");
+    body1.classList.add("header");
+    body1.textContent = "Experience an elegant, breathtaking menu whilst immersing in the futuristic, digital atmosphere, bringing fine dining to the enxt level.";
+    sec1.appendChild(body1);
+ const sec2 = document.createElement("div");
+    sec2.id = "sec2";
+    subcontent.appendChild(sec2);
+    const natural = document.createElement("h1");
+    natural.classList.add("header");
+    natural.textContent = "Our Sources";
+    sec2.appendChild(natural);
+    const body2 = document.createElement("p");
+    body2.classList.add("header");
+    body2.textContent = "Contrasting our futuristic concepts are our premium A5 quality meat, grown and fed with produce of the highest quality, experience genuine succulence at Restaurant Gordon Ramsay";
+    sec2.appendChild(body2);
+}
+
+export { loadExperience }

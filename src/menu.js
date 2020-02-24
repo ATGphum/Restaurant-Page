@@ -1,0 +1,78 @@
+function loadMenu() {
+    const main = document.querySelector("#main");
+    main.innerHTML = "";
+    const title = document.createElement("h1");
+    title.id = "title";
+    title.textContent = "Restaurant Jeremy Vuong Menu";
+    main.appendChild(title);
+    const titlebody = document.createElement("p");
+    titlebody.id = "titlebody";
+    titlebody.textContent = "Established in 2020, Restaurant Jeremy Vuong is the fusion of world class food, romantic ambience and unparalled service - a setting truly reflective of its zero years of achievments.";
+    main.appendChild(titlebody);
+    const carte = document.createElement("h2");
+    carte.id = "carte";
+    carte.textContent = "A La Carte Menu";
+    main.appendChild(carte);
+    const course1 = document.createElement("div");
+    course1.classList.add("course");
+    main.appendChild(course1);
+    const starters = document.createElement("h2");
+    starters.classList.add("coursecontent");
+    starters.textContent = "Starters";
+    course1.appendChild(starters);
+    const ravioli = document.createElement("h3");
+    ravioli.textContent = "Ravioli";
+    course1.appendChild(ravioli); 
+    const lobster = document.createElement("p");
+    lobster.classList.add("dishend");
+    lobster.textContent = "lobster, langoustine, salmon, sorrel";
+    course1.appendChild(lobster);
+    const scallops = document.createElement("h3");
+    scallops.textContent = "Scallops from the Isle of Skye";
+    course1.appendChild(scallops); 
+    const ajo = document.createElement("p");
+    ajo.textContent = "Ajo Blanco, verjus, olive oil";
+    course1.appendChild(ajo); 
+    const course2 = document.createElement("div");
+    course2.classList.add("course");
+    main.appendChild(course2);
+    const maincourse = document.createElement("h2");
+    maincourse.classList.add("coursecontent");
+    maincourse.textContent = "Main Courses";
+    course2.appendChild(maincourse);
+    const cornfish = document.createElement("h3");
+    cornfish.textContent = "Cornfish turbot";
+    course2.appendChild(cornfish); 
+    const celeriac = document.createElement("p");
+    celeriac.classList.add("dishend");
+    celeriac.textContent = "celeriac, black truffle, hazelnut, jus gras"
+    course2.appendChild(celeriac);
+    const fowl = document.createElement("h3");
+    fowl.textContent = "Guinea fowl blanquette";
+    course2.appendChild(fowl); 
+    const maitake = document.createElement("p");
+    maitake.textContent = "maitake, artichoke, black truffle, thyme"
+    course2.appendChild(maitake);   
+    const course3 = document.createElement("div");
+    course3.classList.add("course");
+    main.appendChild(course3);
+    const dessert = document.createElement("h2");
+    dessert.classList.add("coursecontent");
+    dessert.textContent = "Desserts";
+    course3.appendChild(dessert);
+    const pudding = document.createElement("h3");
+    pudding.textContent = "Rice Pudding parfait";
+    course3.appendChild(pudding); 
+    const rhubarb = document.createElement("p");
+    rhubarb.classList.add("dishend");
+    rhubarb.textContent = "Yorkshire rhubarb, stem ginger, lemon balm";
+    course3.appendChild(rhubarb);
+    const blane = document.createElement("h3");
+    blane.textContent = "Mont Blane";
+    course3.appendChild(blane); 
+    const chestnut = document.createElement("p");
+    chestnut.textContent = "smoked chestnut, buckwheat, buttermilk";
+    course3.appendChild(chestnut);   
+}
+
+export { loadMenu }
